@@ -12,7 +12,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: url('https://img.freepik.com/free-photo/galaxy-night-panorama_13140058.htm') no-repeat center center fixed;
+            background: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg') no-repeat center center fixed;
             background-size: cover;
             color: #f0f0f0;
         }
@@ -37,12 +37,13 @@
             font-size: 2.5em;
             color: #fff;
             margin-bottom: 20px;
-            animation: slideIn 1s ease-in-out;
+            animation: bounceIn 1s ease-in-out;
         }
 
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateX(-50px); }
-            to { opacity: 1; transform: translateX(0); }
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1.2); }
+            100% { transform: scale(1); }
         }
 
         .fact-box {
@@ -102,6 +103,7 @@
     </script>
 </body>
 </html>
+
 
 
 
